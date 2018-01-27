@@ -7,19 +7,22 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, GADBannerViewDelegate {
+    
+    @IBOutlet weak var bannerView: GADBannerView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        navigationController?.navigationBar.barTintColor = UIColor(red: 0.2431, green: 0.7255, blue: 0.9059, alpha: 1.0)
+        navigationController?.navigationBar.tintColor = UIColor.white
+        
+        // Load ad
+        let bannerAd = Ad(adView: bannerView, parentController: self)
+        bannerAd.loadAd(testing: true)
+        bannerView.delegate = self
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 

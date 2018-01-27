@@ -1,24 +1,481 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kre-Dg-vmf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Afghan Keyboard-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Afghan_Keyboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lXa-Zm-yCl" userLabel="titleView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="Rc7-b3-IUN" userLabel="title">
+                                        <rect key="frame" x="0.0" y="5.5" width="375" height="89"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.24313725489999999" green="0.72549019609999998" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Rc7-b3-IUN" firstAttribute="leading" secondItem="lXa-Zm-yCl" secondAttribute="leading" id="274-QK-tYI"/>
+                                    <constraint firstItem="Rc7-b3-IUN" firstAttribute="centerY" secondItem="lXa-Zm-yCl" secondAttribute="centerY" id="6BJ-oR-wXh"/>
+                                    <constraint firstAttribute="trailing" secondItem="Rc7-b3-IUN" secondAttribute="trailing" id="AjG-b9-H3D"/>
+                                    <constraint firstAttribute="height" constant="100" id="KHZ-YH-beS">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
+                                    </constraint>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to Enable?" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYj-go-bpP" userLabel="welcome">
+                                <rect key="frame" x="20" y="130" width="335" height="50"/>
+                                <color key="backgroundColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="jcG-Gf-kW9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2- Keyboard &gt; Keyboards" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JcS-rA-zI5">
+                                <rect key="frame" x="20" y="220.5" width="335" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3- Add New Keyboard" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JvP-pG-fCF">
+                                <rect key="frame" x="20" y="251" width="335" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4- Tap Afghan Keyboard" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6aG-6h-Aex">
+                                <rect key="frame" x="20" y="281.5" width="335" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make sure to turn on Allow Full Access for each keyboard." lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZiY-eb-uQD">
+                                <rect key="frame" x="20" y="312" width="335" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iki-15-xZ3" userLabel="selectTheme">
+                                <rect key="frame" x="10" y="362.5" width="355" height="50"/>
+                                <color key="backgroundColor" red="0.24313725489999999" green="0.72549019609999998" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ime-nk-hWK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Themes">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="m8f-pH-lPo" kind="show" id="Tkx-RH-mU5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1- Go to Settings &gt; General" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0h-ae-O2T">
+                                <rect key="frame" x="20" y="190" width="335" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rsy-Lo-KPB" userLabel="BannerAd" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="503" width="375" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="k5d-72-fVz">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="50"/>
+                                    </constraint>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="lXa-Zm-yCl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1hI-vZ-iqT"/>
+                            <constraint firstItem="ZiY-eb-uQD" firstAttribute="top" secondItem="6aG-6h-Aex" secondAttribute="bottom" constant="10" id="7U2-9D-2d7"/>
+                            <constraint firstItem="q0h-ae-O2T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="97N-rM-aSn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rsy-Lo-KPB" secondAttribute="trailing" id="Aei-KV-J3T"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JcS-rA-zI5" secondAttribute="trailing" constant="20" id="BwY-6u-Idv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JvP-pG-fCF" secondAttribute="trailing" constant="20" id="ER5-eb-VvY"/>
+                            <constraint firstItem="JvP-pG-fCF" firstAttribute="top" secondItem="JcS-rA-zI5" secondAttribute="bottom" constant="10" id="OCu-nT-hTY"/>
+                            <constraint firstItem="JcS-rA-zI5" firstAttribute="top" secondItem="q0h-ae-O2T" secondAttribute="bottom" constant="10" id="Q4l-pN-3WA"/>
+                            <constraint firstItem="JcS-rA-zI5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="SG3-sG-gwa"/>
+                            <constraint firstItem="iki-15-xZ3" firstAttribute="top" secondItem="ZiY-eb-uQD" secondAttribute="bottom" constant="30" id="U77-BV-ZSx">
+                                <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                            </constraint>
+                            <constraint firstItem="JYj-go-bpP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="UyB-cs-kgM"/>
+                            <constraint firstItem="JvP-pG-fCF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Vsk-IA-z2s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iki-15-xZ3" secondAttribute="trailing" constant="10" id="a9y-Y6-JCN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZiY-eb-uQD" secondAttribute="trailing" constant="20" id="b1W-XB-cnJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6aG-6h-Aex" secondAttribute="trailing" constant="20" id="bad-mK-o2Q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JYj-go-bpP" secondAttribute="trailing" constant="20" id="f0I-sW-kei"/>
+                            <constraint firstItem="6aG-6h-Aex" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hIv-QY-bVa"/>
+                            <constraint firstItem="Rsy-Lo-KPB" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="jUP-WO-KHs"/>
+                            <constraint firstItem="lXa-Zm-yCl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="me6-lA-dwz"/>
+                            <constraint firstItem="iki-15-xZ3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="mfV-Xa-V8q"/>
+                            <constraint firstItem="6aG-6h-Aex" firstAttribute="top" secondItem="JvP-pG-fCF" secondAttribute="bottom" constant="10" id="nuZ-9A-0qY"/>
+                            <constraint firstItem="q0h-ae-O2T" firstAttribute="top" secondItem="JYj-go-bpP" secondAttribute="bottom" constant="10" id="oMd-HC-OIC"/>
+                            <constraint firstItem="Rsy-Lo-KPB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ogq-Ot-ZSd"/>
+                            <constraint firstItem="JYj-go-bpP" firstAttribute="top" secondItem="lXa-Zm-yCl" secondAttribute="bottom" constant="30" id="q2x-IH-qqP">
+                                <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                            </constraint>
+                            <constraint firstItem="lXa-Zm-yCl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="q7P-tp-gfi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q0h-ae-O2T" secondAttribute="trailing" constant="20" id="rgw-TM-Drr"/>
+                            <constraint firstItem="ZiY-eb-uQD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wGQ-Ev-Dvx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Afghan Keyboard" id="wBq-QX-hT7"/>
+                    <connections>
+                        <outlet property="bannerView" destination="Rsy-Lo-KPB" id="3gU-3c-GMe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="476" y="106.59670164917542"/>
+        </scene>
+        <!--Themes-->
+        <scene sceneID="FuR-O9-hTi">
+            <objects>
+                <viewController title="Themes" id="m8f-pH-lPo" customClass="ThemeViewController" customModule="Afghan_Keyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Au-gE-Zat">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="iFY-vZ-Eqn">
+                                <rect key="frame" x="5" y="5" width="365" height="498"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GoP-1y-SQ1" userLabel="Row1">
+                                        <rect key="frame" x="0.0" y="0.0" width="365" height="74.5"/>
+                                        <subviews>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S47-IG-cwG" userLabel="theme1" customClass="ThemeKey" customModule="Afghan_Keyboard" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="84" height="74.5"/>
+                                                <state key="normal" backgroundImage="1"/>
+                                                <connections>
+                                                    <action selector="selectTheme1:" destination="m8f-pH-lPo" eventType="touchUpInside" id="xzN-ML-zxF"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bnc-rm-gcH" userLabel="theme2" customClass="ThemeKey" customModule="Afghan_Keyboard" customModuleProvider="target">
+                                                <rect key="frame" x="94" y="0.0" width="83.5" height="74.5"/>
+                                                <state key="normal" backgroundImage="2"/>
+                                                <connections>
+                                                    <action selector="selectTheme2:" destination="m8f-pH-lPo" eventType="touchUpInside" id="izr-96-DVC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tmv-fy-neg" userLabel="theme3" customClass="ThemeKey" customModule="Afghan_Keyboard" customModuleProvider="target">
+                                                <rect key="frame" x="187.5" y="0.0" width="84" height="74.5"/>
+                                                <state key="normal" backgroundImage="3"/>
+                                                <connections>
+                                                    <action selector="selectTheme3:" destination="m8f-pH-lPo" eventType="touchUpInside" id="hvC-Ti-6b4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3BQ-MV-W2h" userLabel="theme4" customClass="ThemeKey" customModule="Afghan_Keyboard" customModuleProvider="target">
+                                                <rect key="frame" x="281.5" y="0.0" width="83.5" height="74.5"/>
+                                                <state key="normal" backgroundImage="4"/>
+                                                <connections>
+                                                    <action selector="selectTheme4:" destination="m8f-pH-lPo" eventType="touchUpInside" id="rnA-Be-TxJ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JaY-ii-Vl0" userLabel="Row2">
+                                        <rect key="frame" x="0.0" y="84.5" width="365" height="75"/>
+                                        <subviews>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yes-Ks-w6C" userLabel="theme5" customClass="ThemeKey" customModule="Afghan_Keyboard" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="84" height="75"/>
+                                                <color key="backgroundColor" red="0.82352941180000006" green="0.83529411760000005" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" backgroundImage="5"/>
+                                                <connections>
+                                                    <action selector="selectTheme5:" destination="m8f-pH-lPo" eventType="touchUpInside" id="Zlg-3n-riB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9o-XS-TRI" userLabel="theme6" customClass="ThemeKey" customModule="Afghan_Keyboard" customModuleProvider="target">
+                                                <rect key="frame" x="94" y="0.0" width="83.5" height="75"/>
+                                                <state key="normal" backgroundImage="6"/>
+                                                <connections>
+                                                    <action selector="selectTheme6:" destination="m8f-pH-lPo" eventType="touchUpInside" id="GnY-ix-Iok"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ti-fs-m4f" userLabel="theme7" customClass="ThemeKey" customModule="Afghan_Keyboard" customModuleProvider="target">
+                                                <rect key="frame" x="187.5" y="0.0" width="84" height="75"/>
+                                                <state key="normal" backgroundImage="7"/>
+                                                <connections>
+                                                    <action selector="selectTheme7:" destination="m8f-pH-lPo" eventType="touchUpInside" id="C4c-ZM-qii"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8A-ld-OIu" userLabel="theme8" customClass="ThemeKey" customModule="Afghan_Keyboard" customModuleProvider="target">
+                                                <rect key="frame" x="281.5" y="0.0" width="83.5" height="75"/>
+                                                <state key="normal" backgroundImage="8"/>
+                                                <connections>
+                                                    <action selector="selectTheme8:" destination="m8f-pH-lPo" eventType="touchUpInside" id="6kY-oj-RX2"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Wsu-4M-oef" userLabel="Row3">
+                                        <rect key="frame" x="0.0" y="169.5" width="365" height="74.5"/>
+                                        <subviews>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCe-kN-Dmy" userLabel="theme9" customClass="ThemeKey" customModule="Afghan_Keyboard" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="84" height="74.5"/>
+                                                <color key="backgroundColor" red="0.82352941180000006" green="0.83529411760000005" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" backgroundImage="9"/>
+                                                <connections>
+                                                    <action selector="selectTheme9:" destination="m8f-pH-lPo" eventType="touchUpInside" id="Myr-8i-Fik"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxS-B0-wsk" userLabel="theme10" customClass="ThemeKey" customModule="Afghan_Keyboard" customModuleProvider="target">
+                                                <rect key="frame" x="94" y="0.0" width="83.5" height="74.5"/>
+                                                <state key="normal" backgroundImage="10"/>
+                                                <connections>
+                                                    <action selector="selectTheme10:" destination="m8f-pH-lPo" eventType="touchUpInside" id="eDy-4W-RtE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ZW-VM-5c4" userLabel="theme11" customClass="ThemeKey" customModule="Afghan_Keyboard" customModuleProvider="target">
+                                                <rect key="frame" x="187.5" y="0.0" width="84" height="74.5"/>
+                                                <state key="normal" backgroundImage="11"/>
+                                                <connections>
+                                                    <action selector="selectTheme11:" destination="m8f-pH-lPo" eventType="touchUpInside" id="1Ea-Im-ivw"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sox-DU-hXa" userLabel="theme12" customClass="ThemeKey" customModule="Afghan_Keyboard" customModuleProvider="target">
+                                                <rect key="frame" x="281.5" y="0.0" width="83.5" height="74.5"/>
+                                                <state key="normal" backgroundImage="12"/>
+                                                <connections>
+                                                    <action selector="selectTheme12:" destination="m8f-pH-lPo" eventType="touchUpInside" id="iby-OB-mBh"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VTd-K8-XX6" userLabel="Row4">
+                                        <rect key="frame" x="0.0" y="254" width="365" height="74.5"/>
+                                        <subviews>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DK8-6z-xMR" userLabel="theme13" customClass="ThemeKey" customModule="Afghan_Keyboard" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="84" height="74.5"/>
+                                                <color key="backgroundColor" red="0.82352941180000006" green="0.83529411760000005" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" backgroundImage="13"/>
+                                                <connections>
+                                                    <action selector="selectTheme13:" destination="m8f-pH-lPo" eventType="touchUpInside" id="5GR-VA-J53"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="koS-oS-XGb" userLabel="theme14" customClass="ThemeKey" customModule="Afghan_Keyboard" customModuleProvider="target">
+                                                <rect key="frame" x="94" y="0.0" width="83.5" height="74.5"/>
+                                                <state key="normal" backgroundImage="14"/>
+                                                <connections>
+                                                    <action selector="selectThem14:" destination="m8f-pH-lPo" eventType="touchUpInside" id="pZc-S2-ONJ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xry-hy-qg9" userLabel="theme15" customClass="ThemeKey" customModule="Afghan_Keyboard" customModuleProvider="target">
+                                                <rect key="frame" x="187.5" y="0.0" width="84" height="74.5"/>
+                                                <state key="normal" backgroundImage="15"/>
+                                                <connections>
+                                                    <action selector="selectTheme15:" destination="m8f-pH-lPo" eventType="touchUpInside" id="szO-T6-q8G"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZnT-OK-3ep" userLabel="theme16" customClass="ThemeKey" customModule="Afghan_Keyboard" customModuleProvider="target">
+                                                <rect key="frame" x="281.5" y="0.0" width="83.5" height="74.5"/>
+                                                <state key="normal" backgroundImage="16"/>
+                                                <connections>
+                                                    <action selector="selectTheme16:" destination="m8f-pH-lPo" eventType="touchUpInside" id="r07-9c-Dua"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="W7b-Di-G2K" userLabel="Row5">
+                                        <rect key="frame" x="0.0" y="338.5" width="365" height="75"/>
+                                        <subviews>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tc7-2g-m3W" userLabel="theme17" customClass="ThemeKey" customModule="Afghan_Keyboard" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="84" height="75"/>
+                                                <color key="backgroundColor" red="0.82352941180000006" green="0.83529411760000005" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" backgroundImage="17"/>
+                                                <connections>
+                                                    <action selector="selectTheme17:" destination="m8f-pH-lPo" eventType="touchUpInside" id="nvo-8F-OrO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ed-72-b3l" userLabel="theme18" customClass="ThemeKey" customModule="Afghan_Keyboard" customModuleProvider="target">
+                                                <rect key="frame" x="94" y="0.0" width="83.5" height="75"/>
+                                                <state key="normal" backgroundImage="18"/>
+                                                <connections>
+                                                    <action selector="selectTheme18:" destination="m8f-pH-lPo" eventType="touchUpInside" id="DWm-sz-bVI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1eL-rg-f4R" userLabel="theme19" customClass="ThemeKey" customModule="Afghan_Keyboard" customModuleProvider="target">
+                                                <rect key="frame" x="187.5" y="0.0" width="84" height="75"/>
+                                                <state key="normal" backgroundImage="19"/>
+                                                <connections>
+                                                    <action selector="selectTheme19:" destination="m8f-pH-lPo" eventType="touchUpInside" id="ARB-7D-0aQ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSs-Sv-NJr" userLabel="theme20" customClass="ThemeKey" customModule="Afghan_Keyboard" customModuleProvider="target">
+                                                <rect key="frame" x="281.5" y="0.0" width="83.5" height="75"/>
+                                                <state key="normal" backgroundImage="20"/>
+                                                <connections>
+                                                    <action selector="selectTheme20:" destination="m8f-pH-lPo" eventType="touchUpInside" id="FBu-HV-Pqy"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="h7s-gt-RMs" userLabel="Row6">
+                                        <rect key="frame" x="0.0" y="423.5" width="365" height="74.5"/>
+                                        <subviews>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nz1-84-9gp" userLabel="theme21" customClass="ThemeKey" customModule="Afghan_Keyboard" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="84" height="74.5"/>
+                                                <color key="backgroundColor" red="0.82352941180000006" green="0.83529411760000005" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" backgroundImage="21"/>
+                                                <connections>
+                                                    <action selector="selectTheme21:" destination="m8f-pH-lPo" eventType="touchUpInside" id="seC-AT-qhz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPZ-mA-duf" userLabel="theme22" customClass="ThemeKey" customModule="Afghan_Keyboard" customModuleProvider="target">
+                                                <rect key="frame" x="94" y="0.0" width="83.5" height="74.5"/>
+                                                <state key="normal" backgroundImage="22"/>
+                                                <connections>
+                                                    <action selector="selectTheme22:" destination="m8f-pH-lPo" eventType="touchUpInside" id="gRk-UF-jed"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2s-qS-JIc" userLabel="theme23" customClass="ThemeKey" customModule="Afghan_Keyboard" customModuleProvider="target">
+                                                <rect key="frame" x="187.5" y="0.0" width="84" height="74.5"/>
+                                                <state key="normal" backgroundImage="23"/>
+                                                <connections>
+                                                    <action selector="selectTheme23:" destination="m8f-pH-lPo" eventType="touchUpInside" id="Vrg-Sf-dbI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u7L-Wy-dWE" userLabel="theme24" customClass="ThemeKey" customModule="Afghan_Keyboard" customModuleProvider="target">
+                                                <rect key="frame" x="281.5" y="0.0" width="83.5" height="74.5"/>
+                                                <state key="normal" backgroundImage="24"/>
+                                                <connections>
+                                                    <action selector="selectTheme24:" destination="m8f-pH-lPo" eventType="touchUpInside" id="cuB-ci-EFa"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QK3-Uw-YWM" userLabel="BannerAd" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="503" width="375" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="b7T-Z1-OZo">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="50"/>
+                                    </constraint>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QK3-Uw-YWM" firstAttribute="leading" secondItem="8KJ-Jt-Jwc" secondAttribute="leading" id="4ll-P9-VQc"/>
+                            <constraint firstItem="8KJ-Jt-Jwc" firstAttribute="trailing" secondItem="QK3-Uw-YWM" secondAttribute="trailing" id="8wh-oL-hqg"/>
+                            <constraint firstItem="8KJ-Jt-Jwc" firstAttribute="bottom" secondItem="QK3-Uw-YWM" secondAttribute="bottom" id="Ia7-wM-um8"/>
+                            <constraint firstAttribute="trailing" secondItem="iFY-vZ-Eqn" secondAttribute="trailing" constant="5" id="Q3P-Iy-nnz"/>
+                            <constraint firstItem="iFY-vZ-Eqn" firstAttribute="leading" secondItem="8KJ-Jt-Jwc" secondAttribute="leading" constant="5" id="Rz9-vI-3Ki"/>
+                            <constraint firstItem="iFY-vZ-Eqn" firstAttribute="top" secondItem="8KJ-Jt-Jwc" secondAttribute="top" constant="5" id="izt-Ce-JaS"/>
+                            <constraint firstItem="QK3-Uw-YWM" firstAttribute="top" secondItem="iFY-vZ-Eqn" secondAttribute="bottom" id="l38-Jn-JLf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8KJ-Jt-Jwc"/>
+                    </view>
+                    <connections>
+                        <outlet property="bannerView" destination="QK3-Uw-YWM" id="AGU-Mq-fVd"/>
+                        <outletCollection property="buttons" destination="S47-IG-cwG" collectionClass="NSMutableArray" id="TLv-k6-BLZ"/>
+                        <outletCollection property="buttons" destination="bnc-rm-gcH" collectionClass="NSMutableArray" id="yKu-vc-rLK"/>
+                        <outletCollection property="buttons" destination="tmv-fy-neg" collectionClass="NSMutableArray" id="iQl-1R-CLi"/>
+                        <outletCollection property="buttons" destination="3BQ-MV-W2h" collectionClass="NSMutableArray" id="Atr-AW-NAw"/>
+                        <outletCollection property="buttons" destination="yes-Ks-w6C" collectionClass="NSMutableArray" id="h2l-Lg-T2f"/>
+                        <outletCollection property="buttons" destination="D9o-XS-TRI" collectionClass="NSMutableArray" id="0uF-ar-eNl"/>
+                        <outletCollection property="buttons" destination="3ti-fs-m4f" collectionClass="NSMutableArray" id="WOV-Wn-pdh"/>
+                        <outletCollection property="buttons" destination="P8A-ld-OIu" collectionClass="NSMutableArray" id="3Hd-zd-a9s"/>
+                        <outletCollection property="buttons" destination="YCe-kN-Dmy" collectionClass="NSMutableArray" id="ual-Ya-Gzs"/>
+                        <outletCollection property="buttons" destination="oxS-B0-wsk" collectionClass="NSMutableArray" id="DY0-mK-khC"/>
+                        <outletCollection property="buttons" destination="6ZW-VM-5c4" collectionClass="NSMutableArray" id="r0M-Of-t9C"/>
+                        <outletCollection property="buttons" destination="Sox-DU-hXa" collectionClass="NSMutableArray" id="ZV1-cO-ACe"/>
+                        <outletCollection property="buttons" destination="DK8-6z-xMR" collectionClass="NSMutableArray" id="cMf-1T-KFY"/>
+                        <outletCollection property="buttons" destination="koS-oS-XGb" collectionClass="NSMutableArray" id="4oj-it-ubO"/>
+                        <outletCollection property="buttons" destination="Xry-hy-qg9" collectionClass="NSMutableArray" id="Geo-Rr-n3b"/>
+                        <outletCollection property="buttons" destination="ZnT-OK-3ep" collectionClass="NSMutableArray" id="jdz-0T-kuH"/>
+                        <outletCollection property="buttons" destination="Tc7-2g-m3W" collectionClass="NSMutableArray" id="aZM-JP-SlS"/>
+                        <outletCollection property="buttons" destination="6ed-72-b3l" collectionClass="NSMutableArray" id="cT0-w1-4rB"/>
+                        <outletCollection property="buttons" destination="1eL-rg-f4R" collectionClass="NSMutableArray" id="2DB-g1-14X"/>
+                        <outletCollection property="buttons" destination="KSs-Sv-NJr" collectionClass="NSMutableArray" id="ohH-dX-bjj"/>
+                        <outletCollection property="buttons" destination="Nz1-84-9gp" collectionClass="NSMutableArray" id="sF2-Qp-pKu"/>
+                        <outletCollection property="buttons" destination="cPZ-mA-duf" collectionClass="NSMutableArray" id="p8A-iL-whT"/>
+                        <outletCollection property="buttons" destination="i2s-qS-JIc" collectionClass="NSMutableArray" id="FA1-BN-Tm5"/>
+                        <outletCollection property="buttons" destination="u7L-Wy-dWE" collectionClass="NSMutableArray" id="urT-XB-yK7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HPa-h6-oMi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1224.8" y="106.59670164917542"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Y5f-Rg-xjl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Kre-Dg-vmf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="2gU-Z6-VEc">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.24313725489999999" green="0.72549019609999998" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="QNe-XA-f5j"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NVL-1S-FdD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-230" y="107"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1" width="640" height="430"/>
+        <image name="10" width="640" height="430"/>
+        <image name="11" width="640" height="430"/>
+        <image name="12" width="640" height="430"/>
+        <image name="13" width="640" height="430"/>
+        <image name="14" width="640" height="430"/>
+        <image name="15" width="640" height="430"/>
+        <image name="16" width="640" height="430"/>
+        <image name="17" width="640" height="430"/>
+        <image name="18" width="640" height="431"/>
+        <image name="19" width="640" height="431"/>
+        <image name="2" width="640" height="430"/>
+        <image name="20" width="640" height="430"/>
+        <image name="21" width="640" height="430"/>
+        <image name="22" width="640" height="430"/>
+        <image name="23" width="640" height="430"/>
+        <image name="24" width="640" height="430"/>
+        <image name="3" width="640" height="430"/>
+        <image name="4" width="640" height="430"/>
+        <image name="5" width="640" height="430"/>
+        <image name="6" width="640" height="430"/>
+        <image name="7" width="640" height="430"/>
+        <image name="8" width="640" height="430"/>
+        <image name="9" width="640" height="430"/>
+        <image name="title" width="388" height="89"/>
+    </resources>
 </document>

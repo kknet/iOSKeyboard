@@ -12,7 +12,74 @@
 		F360AC492013A15400ED643E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F360AC472013A15400ED643E /* Main.storyboard */; };
 		F360AC4B2013A15400ED643E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F360AC4A2013A15400ED643E /* Assets.xcassets */; };
 		F360AC4E2013A15400ED643E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F360AC4C2013A15400ED643E /* LaunchScreen.storyboard */; };
+		F360AC6C2013A80700ED643E /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F360AC6B2013A80700ED643E /* KeyboardViewController.swift */; };
+		F360AC702013A80700ED643E /* Pashto.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F360AC692013A80700ED643E /* Pashto.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F360AC772013BF6F00ED643E /* PashtoKeyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = F360AC762013BF6F00ED643E /* PashtoKeyboard.xib */; };
+		F3DDBC1120155931000E83DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F360AC4A2013A15400ED643E /* Assets.xcassets */; };
+		F3DDBC13201577F0000E83DB /* ThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DDBC12201577F0000E83DB /* ThemeViewController.swift */; };
+		F3DDBC1820167330000E83DB /* ThemeKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DDBC16201670A6000E83DB /* ThemeKey.swift */; };
+		F3DDBC1F2016EFA6000E83DB /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3DDBC1E2016EFA6000E83DB /* GoogleMobileAds.framework */; };
+		F3DDBC212016EFFD000E83DB /* Ad.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DDBC202016EFFD000E83DB /* Ad.swift */; };
+		F3DDBC2620179519000E83DB /* ThemeKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DDBC16201670A6000E83DB /* ThemeKey.swift */; };
+		F3DDBC272017951A000E83DB /* ThemeKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DDBC16201670A6000E83DB /* ThemeKey.swift */; };
+		F3DDBC282017951B000E83DB /* ThemeKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DDBC16201670A6000E83DB /* ThemeKey.swift */; };
+		F3FEA51720143B6800813A76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F360AC4A2013A15400ED643E /* Assets.xcassets */; };
+		F3FEA51F20148D7400813A76 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FEA51E20148D7400813A76 /* KeyboardViewController.swift */; };
+		F3FEA52320148D7400813A76 /* Pashto Latin.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F3FEA51C20148D7300813A76 /* Pashto Latin.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F3FEA5282014F18F00813A76 /* PashtoLatin.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3FEA5272014F18F00813A76 /* PashtoLatin.xib */; };
+		F3FEA5292014F36100813A76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F360AC4A2013A15400ED643E /* Assets.xcassets */; };
+		F3FEA52C2015300B00813A76 /* KeyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FEA52B2015300B00813A76 /* KeyButton.swift */; };
+		F3FEA52D2015302300813A76 /* KeyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FEA52B2015300B00813A76 /* KeyButton.swift */; };
+		F3FEA52E2015302400813A76 /* KeyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FEA52B2015300B00813A76 /* KeyButton.swift */; };
+		F3FEA5302015444700813A76 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FEA52F2015444700813A76 /* ImageView.swift */; };
+		F3FEA5312015444700813A76 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FEA52F2015444700813A76 /* ImageView.swift */; };
+		F3FEA5322015444700813A76 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FEA52F2015444700813A76 /* ImageView.swift */; };
+		F3FEA53A2015463200813A76 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FEA5392015463200813A76 /* KeyboardViewController.swift */; };
+		F3FEA53E2015463200813A76 /* Dari.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F3FEA5372015463200813A76 /* Dari.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F3FEA5432015465600813A76 /* DariKeyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3FEA5422015465600813A76 /* DariKeyboard.xib */; };
+		F3FEA54420154C7300813A76 /* KeyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FEA52B2015300B00813A76 /* KeyButton.swift */; };
+		F3FEA54520154C8300813A76 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FEA52F2015444700813A76 /* ImageView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F360AC6E2013A80700ED643E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F360AC382013A15300ED643E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F360AC682013A80700ED643E;
+			remoteInfo = Pashto;
+		};
+		F3FEA52120148D7400813A76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F360AC382013A15300ED643E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3FEA51B20148D7300813A76;
+			remoteInfo = "Pashto Latin";
+		};
+		F3FEA53C2015463200813A76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F360AC382013A15300ED643E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3FEA5362015463200813A76;
+			remoteInfo = Dari;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F360AC642013A2E800ED643E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F3FEA53E2015463200813A76 /* Dari.appex in Embed App Extensions */,
+				F360AC702013A80700ED643E /* Pashto.appex in Embed App Extensions */,
+				F3FEA52320148D7400813A76 /* Pashto Latin.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F360AC402013A15300ED643E /* Afghan Keyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Afghan Keyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +89,56 @@
 		F360AC4A2013A15400ED643E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F360AC4D2013A15400ED643E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F360AC4F2013A15400ED643E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F360AC692013A80700ED643E /* Pashto.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Pashto.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F360AC6B2013A80700ED643E /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		F360AC6D2013A80700ED643E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F360AC762013BF6F00ED643E /* PashtoKeyboard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PashtoKeyboard.xib; sourceTree = "<group>"; };
+		F3DDBC12201577F0000E83DB /* ThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewController.swift; sourceTree = "<group>"; };
+		F3DDBC1420159511000E83DB /* Afghan Keyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Afghan Keyboard.entitlements"; sourceTree = "<group>"; };
+		F3DDBC1520159577000E83DB /* Pashto.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pashto.entitlements; sourceTree = "<group>"; };
+		F3DDBC16201670A6000E83DB /* ThemeKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeKey.swift; sourceTree = "<group>"; };
+		F3DDBC1A2016EF58000E83DB /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "../../../Downloads/GoogleMobileAdsSdkiOS-7.27.0/GoogleMobileAds.framework"; sourceTree = "<group>"; };
+		F3DDBC1C2016EF9D000E83DB /* GoogleMobileAdsSdkiOS-7.27.0 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "GoogleMobileAdsSdkiOS-7.27.0"; sourceTree = "<group>"; };
+		F3DDBC1E2016EFA6000E83DB /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "GoogleMobileAdsSdkiOS-7.27.0/GoogleMobileAds.framework"; sourceTree = "<group>"; };
+		F3DDBC202016EFFD000E83DB /* Ad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ad.swift; sourceTree = "<group>"; };
+		F3DDBC29201799D1000E83DB /* Pashto Latin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Pashto Latin.entitlements"; sourceTree = "<group>"; };
+		F3DDBC2A201799E4000E83DB /* Dari.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Dari.entitlements; sourceTree = "<group>"; };
+		F3FEA51C20148D7300813A76 /* Pashto Latin.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Pashto Latin.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3FEA51E20148D7400813A76 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		F3FEA52020148D7400813A76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3FEA5272014F18F00813A76 /* PashtoLatin.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PashtoLatin.xib; sourceTree = "<group>"; };
+		F3FEA52B2015300B00813A76 /* KeyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyButton.swift; sourceTree = "<group>"; };
+		F3FEA52F2015444700813A76 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		F3FEA5372015463200813A76 /* Dari.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Dari.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3FEA5392015463200813A76 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		F3FEA53B2015463200813A76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3FEA5422015465600813A76 /* DariKeyboard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DariKeyboard.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F360AC3D2013A15300ED643E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3DDBC1F2016EFA6000E83DB /* GoogleMobileAds.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F360AC662013A80700ED643E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3FEA51920148D7300813A76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3FEA5342015463200813A76 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,8 +151,13 @@
 		F360AC372013A15300ED643E = {
 			isa = PBXGroup;
 			children = (
+				F3FEA52A20152FD300813A76 /* SharedModels */,
 				F360AC422013A15400ED643E /* Afghan Keyboard */,
+				F360AC6A2013A80700ED643E /* Pashto */,
+				F3FEA51D20148D7300813A76 /* Pashto Latin */,
+				F3FEA5382015463200813A76 /* Dari */,
 				F360AC412013A15300ED643E /* Products */,
+				F3DDBC192016EF58000E83DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +165,9 @@
 			isa = PBXGroup;
 			children = (
 				F360AC402013A15300ED643E /* Afghan Keyboard.app */,
+				F360AC692013A80700ED643E /* Pashto.appex */,
+				F3FEA51C20148D7300813A76 /* Pashto Latin.appex */,
+				F3FEA5372015463200813A76 /* Dari.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,14 +175,70 @@
 		F360AC422013A15400ED643E /* Afghan Keyboard */ = {
 			isa = PBXGroup;
 			children = (
+				F3DDBC1420159511000E83DB /* Afghan Keyboard.entitlements */,
 				F360AC432013A15400ED643E /* AppDelegate.swift */,
 				F360AC452013A15400ED643E /* ViewController.swift */,
 				F360AC472013A15400ED643E /* Main.storyboard */,
 				F360AC4A2013A15400ED643E /* Assets.xcassets */,
 				F360AC4C2013A15400ED643E /* LaunchScreen.storyboard */,
 				F360AC4F2013A15400ED643E /* Info.plist */,
+				F3DDBC12201577F0000E83DB /* ThemeViewController.swift */,
 			);
 			path = "Afghan Keyboard";
+			sourceTree = "<group>";
+		};
+		F360AC6A2013A80700ED643E /* Pashto */ = {
+			isa = PBXGroup;
+			children = (
+				F3DDBC1520159577000E83DB /* Pashto.entitlements */,
+				F360AC6B2013A80700ED643E /* KeyboardViewController.swift */,
+				F360AC6D2013A80700ED643E /* Info.plist */,
+				F360AC762013BF6F00ED643E /* PashtoKeyboard.xib */,
+			);
+			path = Pashto;
+			sourceTree = "<group>";
+		};
+		F3DDBC192016EF58000E83DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3DDBC1E2016EFA6000E83DB /* GoogleMobileAds.framework */,
+				F3DDBC1C2016EF9D000E83DB /* GoogleMobileAdsSdkiOS-7.27.0 */,
+				F3DDBC1A2016EF58000E83DB /* GoogleMobileAds.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3FEA51D20148D7300813A76 /* Pashto Latin */ = {
+			isa = PBXGroup;
+			children = (
+				F3DDBC29201799D1000E83DB /* Pashto Latin.entitlements */,
+				F3FEA51E20148D7400813A76 /* KeyboardViewController.swift */,
+				F3FEA52020148D7400813A76 /* Info.plist */,
+				F3FEA5272014F18F00813A76 /* PashtoLatin.xib */,
+			);
+			path = "Pashto Latin";
+			sourceTree = "<group>";
+		};
+		F3FEA52A20152FD300813A76 /* SharedModels */ = {
+			isa = PBXGroup;
+			children = (
+				F3FEA52B2015300B00813A76 /* KeyButton.swift */,
+				F3FEA52F2015444700813A76 /* ImageView.swift */,
+				F3DDBC16201670A6000E83DB /* ThemeKey.swift */,
+				F3DDBC202016EFFD000E83DB /* Ad.swift */,
+			);
+			path = SharedModels;
+			sourceTree = "<group>";
+		};
+		F3FEA5382015463200813A76 /* Dari */ = {
+			isa = PBXGroup;
+			children = (
+				F3DDBC2A201799E4000E83DB /* Dari.entitlements */,
+				F3FEA5392015463200813A76 /* KeyboardViewController.swift */,
+				F3FEA53B2015463200813A76 /* Info.plist */,
+				F3FEA5422015465600813A76 /* DariKeyboard.xib */,
+			);
+			path = Dari;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +251,70 @@
 				F360AC3C2013A15300ED643E /* Sources */,
 				F360AC3D2013A15300ED643E /* Frameworks */,
 				F360AC3E2013A15300ED643E /* Resources */,
+				F360AC642013A2E800ED643E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F360AC6F2013A80700ED643E /* PBXTargetDependency */,
+				F3FEA52220148D7400813A76 /* PBXTargetDependency */,
+				F3FEA53D2015463200813A76 /* PBXTargetDependency */,
 			);
 			name = "Afghan Keyboard";
 			productName = "Afghan Keyboard";
 			productReference = F360AC402013A15300ED643E /* Afghan Keyboard.app */;
 			productType = "com.apple.product-type.application";
+		};
+		F360AC682013A80700ED643E /* Pashto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F360AC712013A80700ED643E /* Build configuration list for PBXNativeTarget "Pashto" */;
+			buildPhases = (
+				F360AC652013A80700ED643E /* Sources */,
+				F360AC662013A80700ED643E /* Frameworks */,
+				F360AC672013A80700ED643E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pashto;
+			productName = Pashto;
+			productReference = F360AC692013A80700ED643E /* Pashto.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		F3FEA51B20148D7300813A76 /* Pashto Latin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3FEA52420148D7400813A76 /* Build configuration list for PBXNativeTarget "Pashto Latin" */;
+			buildPhases = (
+				F3FEA51820148D7300813A76 /* Sources */,
+				F3FEA51920148D7300813A76 /* Frameworks */,
+				F3FEA51A20148D7300813A76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pashto Latin";
+			productName = "Pashto Latin";
+			productReference = F3FEA51C20148D7300813A76 /* Pashto Latin.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		F3FEA5362015463200813A76 /* Dari */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3FEA53F2015463200813A76 /* Build configuration list for PBXNativeTarget "Dari" */;
+			buildPhases = (
+				F3FEA5332015463200813A76 /* Sources */,
+				F3FEA5342015463200813A76 /* Frameworks */,
+				F3FEA5352015463200813A76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dari;
+			productName = Dari;
+			productReference = F3FEA5372015463200813A76 /* Dari.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -97,6 +329,41 @@
 					F360AC3F2013A15300ED643E = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					F360AC682013A80700ED643E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					F3FEA51B20148D7300813A76 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					F3FEA5362015463200813A76 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -114,6 +381,9 @@
 			projectRoot = "";
 			targets = (
 				F360AC3F2013A15300ED643E /* Afghan Keyboard */,
+				F360AC682013A80700ED643E /* Pashto */,
+				F3FEA51B20148D7300813A76 /* Pashto Latin */,
+				F3FEA5362015463200813A76 /* Dari */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +399,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F360AC672013A80700ED643E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3FEA51720143B6800813A76 /* Assets.xcassets in Resources */,
+				F360AC772013BF6F00ED643E /* PashtoKeyboard.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3FEA51A20148D7300813A76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3FEA5292014F36100813A76 /* Assets.xcassets in Resources */,
+				F3FEA5282014F18F00813A76 /* PashtoLatin.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3FEA5352015463200813A76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3DDBC1120155931000E83DB /* Assets.xcassets in Resources */,
+				F3FEA5432015465600813A76 /* DariKeyboard.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -136,12 +433,68 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3DDBC13201577F0000E83DB /* ThemeViewController.swift in Sources */,
+				F3FEA5302015444700813A76 /* ImageView.swift in Sources */,
+				F3DDBC212016EFFD000E83DB /* Ad.swift in Sources */,
+				F3FEA52C2015300B00813A76 /* KeyButton.swift in Sources */,
+				F3DDBC1820167330000E83DB /* ThemeKey.swift in Sources */,
 				F360AC462013A15400ED643E /* ViewController.swift in Sources */,
 				F360AC442013A15400ED643E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F360AC652013A80700ED643E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F360AC6C2013A80700ED643E /* KeyboardViewController.swift in Sources */,
+				F3DDBC2620179519000E83DB /* ThemeKey.swift in Sources */,
+				F3FEA52D2015302300813A76 /* KeyButton.swift in Sources */,
+				F3FEA5312015444700813A76 /* ImageView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3FEA51820148D7300813A76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3FEA51F20148D7400813A76 /* KeyboardViewController.swift in Sources */,
+				F3DDBC272017951A000E83DB /* ThemeKey.swift in Sources */,
+				F3FEA52E2015302400813A76 /* KeyButton.swift in Sources */,
+				F3FEA5322015444700813A76 /* ImageView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3FEA5332015463200813A76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3FEA53A2015463200813A76 /* KeyboardViewController.swift in Sources */,
+				F3DDBC282017951B000E83DB /* ThemeKey.swift in Sources */,
+				F3FEA54420154C7300813A76 /* KeyButton.swift in Sources */,
+				F3FEA54520154C8300813A76 /* ImageView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F360AC6F2013A80700ED643E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F360AC682013A80700ED643E /* Pashto */;
+			targetProxy = F360AC6E2013A80700ED643E /* PBXContainerItemProxy */;
+		};
+		F3FEA52220148D7400813A76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3FEA51B20148D7300813A76 /* Pashto Latin */;
+			targetProxy = F3FEA52120148D7400813A76 /* PBXContainerItemProxy */;
+		};
+		F3FEA53D2015463200813A76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3FEA5362015463200813A76 /* Dari */;
+			targetProxy = F3FEA53C2015463200813A76 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F360AC472013A15400ED643E /* Main.storyboard */ = {
@@ -211,7 +564,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -262,7 +615,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -273,12 +626,19 @@
 		F360AC532013A15400ED643E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Afghan Keyboard/Afghan Keyboard.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JYENF7CE7V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleMobileAdsSdkiOS-7.27.0",
+				);
 				INFOPLIST_FILE = "Afghan Keyboard/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sunzala.Afghan-Keyboard";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunzala.afghankeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -288,13 +648,116 @@
 		F360AC542013A15400ED643E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Afghan Keyboard/Afghan Keyboard.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JYENF7CE7V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleMobileAdsSdkiOS-7.27.0",
+				);
 				INFOPLIST_FILE = "Afghan Keyboard/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sunzala.Afghan-Keyboard";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunzala.afghankeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F360AC722013A80700ED643E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Pashto/Pashto.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JYENF7CE7V;
+				INFOPLIST_FILE = Pashto/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunzala.afghankeyboard.pashto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F360AC732013A80700ED643E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Pashto/Pashto.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JYENF7CE7V;
+				INFOPLIST_FILE = Pashto/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunzala.afghankeyboard.pashto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F3FEA52520148D7400813A76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Pashto Latin/Pashto Latin.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JYENF7CE7V;
+				INFOPLIST_FILE = "Pashto Latin/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunzala.afghankeyboard.pashtolatin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F3FEA52620148D7400813A76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Pashto Latin/Pashto Latin.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JYENF7CE7V;
+				INFOPLIST_FILE = "Pashto Latin/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunzala.afghankeyboard.pashtolatin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F3FEA5402015463200813A76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Dari/Dari.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JYENF7CE7V;
+				INFOPLIST_FILE = Dari/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunzala.afghankeyboard.dari;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F3FEA5412015463200813A76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Dari/Dari.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JYENF7CE7V;
+				INFOPLIST_FILE = Dari/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunzala.afghankeyboard.dari;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -317,6 +780,33 @@
 			buildConfigurations = (
 				F360AC532013A15400ED643E /* Debug */,
 				F360AC542013A15400ED643E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F360AC712013A80700ED643E /* Build configuration list for PBXNativeTarget "Pashto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F360AC722013A80700ED643E /* Debug */,
+				F360AC732013A80700ED643E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3FEA52420148D7400813A76 /* Build configuration list for PBXNativeTarget "Pashto Latin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3FEA52520148D7400813A76 /* Debug */,
+				F3FEA52620148D7400813A76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3FEA53F2015463200813A76 /* Build configuration list for PBXNativeTarget "Dari" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3FEA5402015463200813A76 /* Debug */,
+				F3FEA5412015463200813A76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
