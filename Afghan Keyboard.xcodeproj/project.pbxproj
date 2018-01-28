@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F33BCBD2201E4B4F00324B54 /* AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33BCBD1201E4B4F00324B54 /* AttributedString.swift */; };
+		F33BCBD3201E4B4F00324B54 /* AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33BCBD1201E4B4F00324B54 /* AttributedString.swift */; };
+		F33BCBD4201E4B4F00324B54 /* AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33BCBD1201E4B4F00324B54 /* AttributedString.swift */; };
+		F33BCBD5201E4B4F00324B54 /* AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33BCBD1201E4B4F00324B54 /* AttributedString.swift */; };
 		F360AC442013A15400ED643E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F360AC432013A15400ED643E /* AppDelegate.swift */; };
 		F360AC462013A15400ED643E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F360AC452013A15400ED643E /* ViewController.swift */; };
 		F360AC492013A15400ED643E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F360AC472013A15400ED643E /* Main.storyboard */; };
@@ -82,6 +86,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F33BCBD1201E4B4F00324B54 /* AttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedString.swift; sourceTree = "<group>"; };
 		F360AC402013A15300ED643E /* Afghan Keyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Afghan Keyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F360AC432013A15400ED643E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F360AC452013A15400ED643E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -226,6 +231,7 @@
 				F3FEA52F2015444700813A76 /* ImageView.swift */,
 				F3DDBC16201670A6000E83DB /* ThemeKey.swift */,
 				F3DDBC202016EFFD000E83DB /* Ad.swift */,
+				F33BCBD1201E4B4F00324B54 /* AttributedString.swift */,
 			);
 			path = SharedModels;
 			sourceTree = "<group>";
@@ -433,6 +439,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F33BCBD2201E4B4F00324B54 /* AttributedString.swift in Sources */,
 				F3DDBC13201577F0000E83DB /* ThemeViewController.swift in Sources */,
 				F3FEA5302015444700813A76 /* ImageView.swift in Sources */,
 				F3DDBC212016EFFD000E83DB /* Ad.swift in Sources */,
@@ -449,6 +456,7 @@
 			files = (
 				F360AC6C2013A80700ED643E /* KeyboardViewController.swift in Sources */,
 				F3DDBC2620179519000E83DB /* ThemeKey.swift in Sources */,
+				F33BCBD3201E4B4F00324B54 /* AttributedString.swift in Sources */,
 				F3FEA52D2015302300813A76 /* KeyButton.swift in Sources */,
 				F3FEA5312015444700813A76 /* ImageView.swift in Sources */,
 			);
@@ -460,6 +468,7 @@
 			files = (
 				F3FEA51F20148D7400813A76 /* KeyboardViewController.swift in Sources */,
 				F3DDBC272017951A000E83DB /* ThemeKey.swift in Sources */,
+				F33BCBD4201E4B4F00324B54 /* AttributedString.swift in Sources */,
 				F3FEA52E2015302400813A76 /* KeyButton.swift in Sources */,
 				F3FEA5322015444700813A76 /* ImageView.swift in Sources */,
 			);
@@ -471,6 +480,7 @@
 			files = (
 				F3FEA53A2015463200813A76 /* KeyboardViewController.swift in Sources */,
 				F3DDBC282017951B000E83DB /* ThemeKey.swift in Sources */,
+				F33BCBD5201E4B4F00324B54 /* AttributedString.swift in Sources */,
 				F3FEA54420154C7300813A76 /* KeyButton.swift in Sources */,
 				F3FEA54520154C8300813A76 /* ImageView.swift in Sources */,
 			);

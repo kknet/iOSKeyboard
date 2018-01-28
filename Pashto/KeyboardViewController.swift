@@ -31,11 +31,22 @@ class KeyboardViewController: UIInputViewController {
     
     //MARK: - Variables
     var timer: Timer?
+    let attributedString = AttributedString()
     
     override func updateViewConstraints() {
         super.updateViewConstraints()
         
         // Add custom view sizing constraints here
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        // Subscript text on the button
+        attributedString.setSuperScript(text: "يئ", button: ye1, fontSize: 12)
+        attributedString.setSuperScript(text: "‌ۍی", button: ye2, fontSize: 12)
+        attributedString.setSuperScript(text: "صض", button: swat, fontSize: 6)
+        attributedString.setSuperScript(text: "طظ", button: tway, fontSize: 12)
+        attributedString.setSuperScript(text: "وؤ", button: wow, fontSize: 12)
+        attributedString.setSuperScript(text: "نڼ", button: noon, fontSize: 12)
     }
     
     override func viewDidLoad() {
@@ -51,23 +62,6 @@ class KeyboardViewController: UIInputViewController {
         // Next keyboard
         self.nextKeyboardPashto.addTarget(self, action: #selector(handleInputModeList(from:with:)), for: .allTouchEvents)
         self.nextKeyboardSybmols.addTarget(self, action: #selector(handleInputModeList(from:with:)), for: .allTouchEvents)
-        
-        // Subscript text on the button
-        superScriptText(text: "يئ", button: ye1, fontSize: 12)
-        superScriptText(text: "‌ۍی", button: ye2, fontSize: 12)
-        superScriptText(text: "صض", button: swat, fontSize: 6)
-        superScriptText(text: "طظ", button: tway, fontSize: 12)
-        superScriptText(text: "وؤ", button: wow, fontSize: 12)
-        superScriptText(text: "نڼ", button: noon, fontSize: 12)
-    }
-    
-    // SuperScript text on the button
-    func superScriptText(text: String, button: KeyButton, fontSize: Int) {
-        let font:UIFont? = UIFont.systemFont(ofSize: 22, weight: UIFont.Weight.light)
-        let fontSuper:UIFont? = UIFont(name: "Helvetica", size:CGFloat(fontSize))
-        let attString:NSMutableAttributedString = NSMutableAttributedString(string: text, attributes: [.font:font!])
-        attString.setAttributes([.font:fontSuper!,.baselineOffset:15], range: NSRange(location:1,length:1))
-        button.setAttributedTitle(attString, for: .normal)
     }
     
     override func textWillChange(_ textInput: UITextInput?) {
@@ -140,6 +134,7 @@ class KeyboardViewController: UIInputViewController {
     
     // Double touch
     @IBAction func dotWithSpace(_ sender: UITapGestureRecognizer) {
+        textDocumentProxy.deleteBackward()
         (textDocumentProxy as UIKeyInput).insertText(".")
         AudioServicesPlaySystemSound(1104);
         (textDocumentProxy as UIKeyInput).insertText(" ")

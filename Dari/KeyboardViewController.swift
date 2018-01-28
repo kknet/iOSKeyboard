@@ -102,6 +102,7 @@ class KeyboardViewController: UIInputViewController {
     
     // Double touch
     @IBAction func dotWithSpace(_ sender: UITapGestureRecognizer) {
+        textDocumentProxy.deleteBackward()
         (textDocumentProxy as UIKeyInput).insertText(".")
         AudioServicesPlaySystemSound(1104);
         (textDocumentProxy as UIKeyInput).insertText(" ")
